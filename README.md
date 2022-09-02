@@ -11,6 +11,6 @@ Nomekop is an RPG game created using MongoDB and React. With full CRUD, make you
 ## WireFraming
 
 
-[Start](https://i.ibb.co/nfdxQxv/Untitled.png)
-[Human Zone](]https://i.ibb.co/9w5xFHt/human-zone.png)
+[Start](https://i.ibb.co/nfdxQxv/Untitled.png).
+[HumanZone](]https://i.ibb.co/9w5xFHt/human-zone.png).
 [Battle](https://i.ibb.co/fxHpvww/battle.png)
