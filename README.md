@@ -4,11 +4,11 @@ Good evening human. I am Professor Mew, a Nomekop professor. Here in Honnis, the
 
 Nomekop is an RPG game created using MongoDB and React. With full CRUD, make your way through the Honnis Region. Unite broken families, create unbroken bonds, and save the human race.
 
-##Trello
+## Trello
 
 [Trello](https://trello.com/b/7VGveBOR/nomekop)
 
-##WireFraming
+## WireFraming
 
 
 [Start](https://i.ibb.co/nfdxQxv/Untitled.png)
