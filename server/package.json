@@ -1,0 +1,28 @@
+{
+  "name": "nomekap",
+  "version": "1.0.0",
+  "description": "Good evening human. I am Professor Mew, a Nomekop professor. Here in Honnis, the Nomekop go out into the wilderness to capture their very own human just like you! Going on an adventure with your Nomekop, competing in battles to become the best Human Master, and creating a bond with your Nokekop Trainer! Isn't that exciting?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoenixkhan97/Nomekap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phoenixkhan97/Nomekap/issues"
+  },
+  "homepage": "https://github.com/phoenixkhan97/Nomekap#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "epress": "^0.0.1-security",
+    "mongo": "^0.1.0",
+    "mongodb": "^4.9.1",
+    "mongoose": "^6.5.4",
+    "morgan": "^1.10.0"
+  }
+}
