@@ -1,4 +1,5 @@
 const mongoose = require("mongoose")
+
 const HumanSchema = require("./human")
 const NomekopSchema = require("./nomekop")
 const ItemSchema = require("./item")
