@@ -11,20 +11,12 @@ const item = [
     {
         name:"Water",
         description:"A waterbottle filled with clean water."
-    },
-    {
-        name:"Medicine",
-        description:"A pill-type medicine. It helps a human restore health by 30%."
     }]
 
 const SpecialItem = [ 
     {
         name:"Narwal Toy",
         description:"A child's toy. Belongs to Jeremy."
-    },
-    {
-        name:"Lost Puppy",
-        description:"Cute, tamed dog. Belongs to Brittany."
     }
 ]
 
