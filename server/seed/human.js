@@ -5,8 +5,8 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async ()=>{
 const human = {
-          name: "Alola Human",
-          description:"The Alola region consists of four main islands that varies in terrain and weather."
+          name: "Jeremy",
+          description:"A male human designed as a father. It has a mate and offspring, but they were taken to the Sanctuary while the male was away."
 }
 await Human.insertMany(human)
 
