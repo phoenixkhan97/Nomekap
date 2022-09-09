@@ -15,5 +15,19 @@ player.src = ""
 
 image.onload = () => {
     c.drawImage(background)
-    c.drawImage(player, 0,0)
+    //cropping and actual location of sprite
+    c.drawImage(player, 0,
+                        0,
+                        player.width / 4,
+                        player.height,
+                        canvas.width / 2 - player.width / 4 / 2,
+                        canvas.height /2 - player.height / 2,
+                        player.width / 4,
+                        player.height
+                        
+)
 } 
+
+window.addEventListener('keydown',()=>{
+    
+})
