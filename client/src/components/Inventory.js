@@ -1,27 +1,4 @@
-class Sprite{
-    constructor(x,y,w,h) {
-        this.x = x
-        this.y = y
-        this.w = w
-        this.h = h
-        this.vx = this.vy = 0
-    }
 
-    position(gravity, friction, floor){
-        this.vy += gravity
-        this.x += this.vx
-        this.y =+ this.vy
-
-        this.vx *= friction
-        this.vy *= friction
-
-        if (this.y + this.h > floor){
-            this.y = floor = this.height
-            this.vy = 0
-        }
-    }
-
-}
 
 class Inventory {
     constructor(x,y,w,h){
