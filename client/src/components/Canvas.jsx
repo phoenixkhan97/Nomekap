@@ -53,23 +53,60 @@ console.log(image)
 
 const playerImage = new Image()
 playerImage.src = 'https://trello.com/1/cards/631178477dd4e701bff9b9a1/attachments/631c04ab1454ea02068b2475/download/runspriteDown.png'
+console.log(playerImage)
 
+class Character{
+    constructor({position,velocity,image}){
+        this.position = position
+        this.velocity = velocity
+        this.image = image
+    }
 
-image.onload = () => {
-    c.drawImage(image,0,0, canvas.width, canvas.height)
+    draw(){
+        c.drawImage(this.image,0,0, canvas.width, canvas.height)
+    }
+}
+
+const background = new Character({
+    position:{
+        x:0,
+        y:0,
+    },
+    image: image
+})
+
+const animation = ()=>{
+    window.requestAnimationFrame(animation)
+    background.draw()
     c.drawImage(playerImage,
         0,
         0,
         playerImage.width / 4,
         playerImage.height,
-        70 ,
+        70,
         450,
         playerImage.width / 4,
         playerImage.height)
+
+    
 }
 
+window.addEventListener("keydown",(e)=>{
+  switch(e.key){
+     case "w":
+   
+        break
+        case "a":
+       
+        break
+        case "s":
 
-
+        break
+        case "d":
+    
+        break
+  }
+})
 
 
 
