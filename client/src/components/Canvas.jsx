@@ -42,7 +42,7 @@ const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
 canvas.width = 700
-canvas.height = 500
+canvas.height = 550
 
 
 c.fillRect(0,0, canvas.width, canvas.height)
@@ -63,18 +63,32 @@ class Character{
     }
 
     draw(){
-        c.drawImage(this.image,0,0, canvas.width, canvas.height)
+        c.drawImage(this.image,this.position.x,this.position.y)
     }
 }
 
 const background = new Character({
     position:{
-        x:0,
-        y:0,
+        x:-200,
+        y:-2320,
     },
     image: image
 })
 
+const key = {
+    w:{
+        pressed:false
+    },
+    a:{
+        pressed:false
+    },
+    s:{
+        pressed:false
+    },
+    d:{
+        pressed:false
+    }
+}
 const animation = ()=>{
     window.requestAnimationFrame(animation)
     background.draw()
@@ -88,25 +102,54 @@ const animation = ()=>{
         playerImage.width / 4,
         playerImage.height)
 
+ if (key.w.pressed)
+    background.position.y = background.position.y += 4
+    else if (key.a.pressed)
+    background.position.x = background.position.x += 4
+    else if (key.s.pressed)
+    background.position.y = background.position.y -= 4
+    else if (key.d.pressed)
+    background.position.x = background.position.x -= 4
+ 
     
 }
+animation()
 
 window.addEventListener("keydown",(e)=>{
   switch(e.key){
      case "w":
-   
+           key.w.pressed = true
         break
         case "a":
-       
+            key.a.pressed = true
         break
         case "s":
-
+            key.s.pressed = true
         break
         case "d":
-    
+            key.d.pressed = true
         break
   }
+  console.log(key)
 })
+
+window.addEventListener("keyup",(e)=>{
+    switch(e.key){
+       case "w":
+             key.w.pressed = false
+          break
+          case "a":
+              key.a.pressed = false
+          break
+          case "s":
+              key.s.pressed = false
+          break
+          case "d":
+              key.d.pressed = false
+          break
+    }
+    console.log(key)
+  })
 
 
 
