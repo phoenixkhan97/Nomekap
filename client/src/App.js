@@ -1,4 +1,5 @@
 import Canvas from "./components/Canvas"
+import map from "./components/map"
 import './App.css';
 
 function App() {
