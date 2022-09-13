@@ -4,10 +4,10 @@ const {Item} = require('../models');
 
 const getAllItem = async (req, res) => {
     try {
-        const items = await Item.find()
-        return res.status(200).json({ items })
+        const items = await Item.findAll()
+        return res.send({ items })
     } catch (error) {
-        return res.status(500).send(error.message);
+        throw error;
     }
 }
 
@@ -16,11 +16,23 @@ const getItemById = async (req, res) => {
         const { id } = req.params;
         const items = await Item.findById(id)
         if (items) {
-            return res.status(200).json({ items });
+            return res.send({ items });
         }
-        return res.status(404).send('Does Not Exist');
     } catch (error) {
-        return res.status(500).send(error.message);
+        throw error
+    }
+}
+
+const createItem = async(req,res) =>{
+    try{
+        let itemId = parseInt(req.params.item_id)
+        let createBody = {
+            itemId, ...req.body
+        }
+        let create = await Item.create(createBody)
+        res.send(create)
+    }catch(error){
+        throw error
     }
 }
 
@@ -29,15 +41,14 @@ const updateItem = async (req, res) => {
         const { id } = req.params;
         await Item.findByIdAndUpdate(id, req.body, { new: true }, (err, items) => {
             if (err) {
-                res.status(500).send(err);
+                res.send(err);
             }
             if (!items) {
-                res.status(500).send('Item not found!');
+                res.send('Item not found!');
             }
-            return res.status(200).json(items);
         })
     } catch (error) {
-        return res.status(500).send(error.message);
+        throw error
     }
 }
 
@@ -56,6 +67,7 @@ const deleteItem = async (req, res) => {
 module.exports = {
     getAllItem,
     getItemById,
+    createItem,
     updateItem,
     deleteItem
 

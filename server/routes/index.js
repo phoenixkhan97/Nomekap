@@ -6,12 +6,13 @@ const router = Router()
 
 router.get('/items', controllers.getAllItem)
 
-router.get('/items/:id', controllers.getItemById)
+router.get('/:items_id', controllers.getItemById)
 
+router.post('/:items_id', controllers.createItem)
 
-router.put('/items/:id', controllers.updateItem)
+router.put('/:items_id', controllers.updateItem)
 
-router.delete('/items/:id', controllers.deleteItem)
+router.delete('/:items_id', controllers.deleteItem)
 
 
 
