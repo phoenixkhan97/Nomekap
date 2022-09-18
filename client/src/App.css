@@ -1,10 +1,78 @@
 .App {
   text-align: center;
   background-color: black;
-  width:100%;
-  height:100%;
-  position:absolute;
-  top:0px;
-  left:0px;
+  height: 569px;
+
 }
+
+.btn{
+  margin-right:600px;
+  margin-top:240px;
+  display:inline-block;
+  background-color: transparent;
+  color:white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding:10px 70px 10px 70px;
+  border:2px solid white;
+
+}
+.btn:hover{
+  cursor:pointer;
+}
+
+.btn1{
+  position:fixed;
+  top:10px;
+  right:10px;
+  width:100px;
+  height:40px;
+}
+
+.img1{
+  height:400px;
+  margin-left:370px;
+  background-image: url("https://trello.com/1/cards/63117c666de0e900246f2d1f/attachments/63154eb66ecac401f0be1d4f/download/nomenkaptitlescreen.png");
+  display: block;
+  background-repeat: no-repeat ;
+  justify-content: center;
+  position: relative;
+}
+
+.img2{
+  height:400px;
+  margin-left:370px;
+  background-image: url("https://trello.com/1/cards/63117c666de0e900246f2d1f/attachments/631551040cff01045c142036/download/nomenkaptitlescreenb%26w.png");
+  display: block;
+  background-repeat: no-repeat ;
+  justify-content: center;
+  position: relative;
+}
+
+.img3{
+  height:100%;
+ width: 100%;
+  background-image: url("https://trello.com/1/cards/6311783a9ba65701ec2f5e68/attachments/631cea8d5b2acc025f6ad7bc/download/map.png");
+  display: block;
+  background-repeat: no-repeat ;
+  justify-content: center;
+  position: relative;
+}
+
+.profile{
+  background-image:url("https://trello.com/1/cards/63117a1cf9eae100e186e5a2/attachments/631cbf2c11832401d6acfd00/download/introtextscreen.png");
+  width:460px;
+  height:300px;
+  position:relative;
+  background-color: aquamarine;
+  left:50%;
+  margin-left: -230px;
+  top:1px;
+  padding:10px;
+
+
+}
+
+
+
+
 

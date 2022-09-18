@@ -1,4 +1,4 @@
-
+const inventory = () =>{
 
 class Inventory {
     constructor(x,y,w,h){
@@ -33,3 +33,13 @@ class Inventory {
         return item
     }
 }
+
+return(
+    <div>
+
+    </div>
+)
+
+}
+
+export default inventory

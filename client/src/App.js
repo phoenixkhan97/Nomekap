@@ -1,23 +1,26 @@
-import Canvas from "./components/Canvas"
-import map from "./components/map"
+import Home from "./pages/home"
+import Start from "./pages/start"
+import Canvas from './pages/canvas'
+import Game from './pages/game'
+import {Routes,Route} from 'react-router-dom'
+
 import './App.css';
 
-function App() {
-
-  const canvas = document.querySelector("canvas")
-  const context = canvas.getContext("2d")
-
-  // canvas.width = 500
-  // canvas.height = 300
-  
-
- //context.fillStyle = "red"
- //context.fillRect(0,0,canvas.width, canvas.height)
-  
+function App() {  
  
+
+
+
   return (
     <div className="App">
-      <canvas></canvas>
+
+        <Routes>
+           <Route path="/" element={<Home/>}/>
+           <Route path="/start" element={<Start/>}/>
+           <Route path="/form" element={<Canvas/>}/>
+           <Route path="/game" element={<Game/>}/>
+        </Routes>
+
     </div>
   );
 }

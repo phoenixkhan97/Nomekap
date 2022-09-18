@@ -317,3 +317,5 @@ const collisions = { "compressionlevel":-1,
  "version":"1.9",
  "width":30
 }
+
+export default collisions
